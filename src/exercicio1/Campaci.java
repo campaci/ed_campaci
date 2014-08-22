@@ -43,6 +43,7 @@ public class Campaci {
            if (!teste) { //Se não haver nenhum nome essa letra, imprimimos isso ...
             System.out.println("Nenhum nome começa com a letra: " + busca);
            }
-      }  // termina o metodo main
+      }// termina o metodo main
+        //Oi amigos
     }
 }
