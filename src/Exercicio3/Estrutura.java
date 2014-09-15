@@ -79,7 +79,8 @@ public class Estrutura {
          Animal temp = a[out];            // jogamos em uma variável (Pessoa) temporária o item marcado
          in = out;                      // inicializamos a variavel in, que ira receber o valor a esquerda
          while(in>0 && a[in-1].getTamanho() >= temp.getTamanho()) // enquanto o item a esquerda for maior que o marcado ...
-            {
+                       
+         {
             a[in] = a[in-1];            // ...nós fazemos eles pularem uma casa a direita
             --in;                       
             }                           // ... quando o item for menor, ele nao pula!
@@ -88,16 +89,17 @@ public class Estrutura {
          }  // end for
       }  // end insertionSort()
      
-     public void insertconSort()
+     public void insertconSort(String[] cor)
       {
       int in, out;
 
       for(out=1; out<nElems; out++)     // vamos rodar até o final do vetor
          {
-         Animal temp = a[out];            // jogamos em uma variável (Pessoa) temporária o item marcado
+         Animal temp = a[out];            // jogamos em uma variável (Animal) temporária o item marcado
          in = out;                      // inicializamos a variavel in, que ira receber o valor a esquerda
-         //while(in>0 && a[in-1].getCor() >= temp.getCor()) // enquanto o item a esquerda for maior que o marcado ...
-            {
+         while(in>0 && a[in-1].getCor().compareTo(cor) < 0) // enquanto o item a esquerda for maior que o marcado ...
+                       
+         {
             a[in] = a[in-1];            // ...nós fazemos eles pularem uma casa a direita
             --in;                       
             }                           // ... quando o item for menor, ele nao pula!

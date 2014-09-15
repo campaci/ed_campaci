@@ -49,6 +49,12 @@ public class ClasseUsuaria {
               System.out.println("Acabei de ordenar os dados por tamanho, ok?");
               
               arr.display();
+         
+                                     
+              arr.insertconSort();
+              System.out.println("Acabei de ordenar os dados por cor, ok?");
+              
+              arr.display();
    
           }      
      }
